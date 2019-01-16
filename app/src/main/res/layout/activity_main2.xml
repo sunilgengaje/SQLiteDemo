@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wall4"
+    tools:context=".BookActivity">
+
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="2dp"
+        android:paddingRight="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Table Reservation Service"
+        android:textAlignment="center" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/cid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:text="Customer id  " />
+
+
+            <EditText
+                android:id="@+id/ecid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Enter Customer no"/>
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/uphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:text="Phone No.   " />
+
+
+            <EditText
+                android:id="@+id/ePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Enter phone number"/>
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/cidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:text="Check In Date   " />
+
+
+            <EditText
+                android:id="@+id/eidate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="__/__/____"
+
+               />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/codate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:text="Check out Date   " />
+
+
+            <EditText
+                android:id="@+id/eodate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="__/__/____"/>
+
+        </TableRow>
+
+        <TableRow android:paddingTop="5dp">
+
+
+            <TextView
+                android:id="@+id/txtprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#186ce2"
+                android:textSize="20dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:text="Price/Table Rs  " />
+
+            <TextView
+                android:id="@+id/uroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ec0f0f"
+                android:textSize="20dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:text="1000  " />
+
+
+
+        </TableRow>
+        <TableRow>
+
+
+            <TextView
+                android:id="@+id/tno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:text="No. of Table  " />
+
+
+
+            <EditText
+                android:id="@+id/etno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Enter table quantity"/>
+        </TableRow>
+
+        <TableRow>
+
+
+        <TextView
+            android:id="@+id/tprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0a34ed"
+            android:textSize="20dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="Total price  " />
+
+            <TextView
+                android:id="@+id/tamt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:textSize="20dp"
+                android:hint=""
+                />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/edelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="delete" />
+
+
+            <Button
+                android:id="@+id/eupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:text="update" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/eview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="See Booking" />
+
+            <Button
+                android:id="@+id/eviewall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="all details" />
+
+        </TableRow>
+<TableRow>
+
+
+    <Button
+        android:id="@+id/eallot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="book" />
+
+
+        <Button
+            android:id="@+id/epr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+
+            android:text="Price" />
+
+
+
+
+</TableRow>
+    </TableLayout>
+
+
+
+
+
+
+</LinearLayout>

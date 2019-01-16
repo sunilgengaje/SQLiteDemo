@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="211dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#ece446"
+        android:textStyle="bold"
+        android:text="Gallary"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ImageSwitcher
+        android:id="@+id/simpleImageSwitcher"
+        android:layout_width="334dp"
+        android:layout_height="197dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="#a62ac6"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+    </ImageSwitcher>
+
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Click Me" />
+
+    <Button
+        android:id="@+id/buttonRBook"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Room Booking" />
+
+    <Button
+        android:id="@+id/buttonTBook"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Table Booking" />
+
+
+</LinearLayout>

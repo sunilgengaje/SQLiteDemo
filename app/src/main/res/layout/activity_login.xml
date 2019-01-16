@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wall4"
+    android:gravity="center"
+    tools:context=".SecondActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="222dp"
+        android:src="@drawable/images" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            >
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:rowCount="2">
+
+        <TextView
+            android:id="@+id/textUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="User Name:-"
+            android:textSize="20dp"
+
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/USRbox"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:gravity="center"
+            android:hint="User Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Password:-"
+
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/PASSbox"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPersonName" />
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/LOGbtn"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/ADDbt"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+
+</LinearLayout>
